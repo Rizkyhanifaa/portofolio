@@ -1,0 +1,116 @@
+/* Navbar */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px; 
+  padding: 0 10%;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+
+.logo {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0BB3DD;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #0BB3DD;
+}
+
+/* Header / Hero Section */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10% 60px; /* Top 120px untuk beri jarak dari navbar fixed */
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+/* Teks Intro */
+.intro-text {
+  flex: 1;
+  color: #0B0C0C;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.intro-text h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+.intro-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 75%;
+}
+
+/* Foto Profil */
+.profile-img img {
+  width: 450px;
+  border-radius: 12px;
+}
+
+/* Warna Highlight */
+.biru {
+  color: #0BB3DD;
+}
+
+/* Tombol */
+.btns {
+  margin-top: 20px;
+}
+
+.btn-blue {
+  background-color: #0BB3DD;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-blue:hover {
+  background-color: #099cc2;
+}
+
+.btn-outline {
+  border: 1px solid #0BB3DD;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: none;
+  color: #0BB3DD;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: #e6f9ff;
+}

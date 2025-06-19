@@ -1,0 +1,115 @@
+/* Projects.css */
+.projects-section {
+  padding: 2rem;
+  color: black;
+  align-items: center;
+}
+
+.projects-section h2 {
+  margin-bottom: 10px;
+}
+
+.projects-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.project-card {
+  display: flex;
+  gap: 2rem;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid #0BB3DD;
+  border-radius: 20px;
+  padding-left: 30px;
+  padding-bottom: 25px;
+  padding-right: 30px;
+  width: 70%;
+  align-items: center;
+}
+
+.project-text h3 {
+  margin-bottom: 10px;
+}
+.project-text {
+  flex: 1;
+  color: #0B0C0C;
+  text-align: left;
+  align-items: flex-start;
+ 
+}
+
+.project-text p {
+    width: 75%;
+}
+
+.project-card-right {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    border: 1px solid #0BB3DD;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    padding-right: 30px;
+    margin: auto;
+    width: 70%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* .project-card-right .project-text {
+  flex: 1;
+  color: #0B0C0C;
+  text-align: right;
+  align-items: flex-start;
+} */
+
+.project-card-right .project-img {
+  flex: 1;
+}
+
+.project-card-right .project-text {
+  flex: 1;
+  text-align: left;
+}
+
+.project-card-right .project-text h3 {
+  margin-bottom: 12px;
+}
+
+.project-card-right .project-text p {
+  margin: 0 0 20px;
+  line-height: 1.6;
+  /* Tambahan penting 👇 */
+  padding-left: 0; /* pastikan tidak ada indent bawaan */
+}
+
+.project-img img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  justify-content: center;
+  padding-top: 40px;
+}
+.highlight {
+  color: #0BB3DD;
+}
+
+/* Skills.css */
+.skills-section {
+  padding: 2rem;
+  text-align: center;
+}
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.skills-grid img {
+  width: 60px;
+  height: 60px;
+}
