@@ -2,8 +2,7 @@ import React from 'react';
 import './Contact.css';
 
 // Import gambar ikon
-import linkedinIcon from '../assets/contact/linkedin.png'; 
-import emailIcon from '../assets/contact/email.png';   
+import linkedinIcon from '../assets/contact/linkedin.png';    
 import instagramIcon from '../assets/contact/instagram.png'; 
 import githubIcon from '../assets/contact/github.png';     
 
@@ -13,11 +12,6 @@ function Contact() {
       name: 'LinkedIn',
       icon: linkedinIcon,
       url: 'https://www.linkedin.com/in/rizkyhanifaafania', 
-    },
-    {
-      name: 'Email',
-      icon: emailIcon,
-      url: 'mailto:rizkyhanifa33@gmail.com',
     },
     {
       name: 'Instagram',
