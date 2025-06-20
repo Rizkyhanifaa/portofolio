@@ -16,13 +16,13 @@ function Projects() {
           </a>
         </div>
         <div className="project-img">
-          <img src="/src/assets/story.png" alt="Story App" />
+          <img src="../src/assets/story.png" alt="Story App" />
         </div>
       </div>
 
       <div className="project-card-right">
         <div className="project-img">
-          <img src="/src/assets/wastewise.png" alt="WasteWise Web" />
+          <img src="../src/assets/wastewise.png" alt="WasteWise Web" />
         </div>
         <div className="project-text">
           <h3>WasteWise <span className="highlight">Web</span></h3>
@@ -42,7 +42,7 @@ function Projects() {
           </a>
         </div>
         <div className="project-img">
-          <img src="/src/assets/notes.png" alt="Notes App" />
+          <img src="../src/assets/notes.png" alt="Notes App" />
         </div>
       </div>
     </section>
