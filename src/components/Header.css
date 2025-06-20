@@ -15,7 +15,6 @@
   z-index: 999;
 }
 
-
 .logo {
   font-size: 16px;
   font-weight: bold;
@@ -45,11 +44,11 @@
 .header-section {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px 10% 60px; /* Top 120px untuk beri jarak dari navbar fixed */
-  min-height: 100vh;
+  justify-content: center;
+  height: 500px;
   box-sizing: border-box;
-  background-color: white;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 /* Teks Intro */
@@ -70,11 +69,12 @@
   margin-bottom: 20px;
   margin-top: 20px;
   width: 75%;
+  font-weight: 600;
 }
 
 /* Foto Profil */
 .profile-img img {
-  width: 450px;
+  width: 400px;
   border-radius: 12px;
 }
 
@@ -96,10 +96,12 @@
   border-radius: 8px;
   margin-right: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease; /* Tambahkan transisi untuk efek halus */
 }
 
 .btn-blue:hover {
   background-color: #099cc2;
+  transform: scale(1.05); /* Memperbesar tombol sebesar 5% */
 }
 
 .btn-outline {
@@ -109,8 +111,10 @@
   background: none;
   color: #0BB3DD;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .btn-outline:hover {
   background-color: #e6f9ff;
+  transform: scale(1.05); /* Memperbesar tombol sebesar 5% */
 }

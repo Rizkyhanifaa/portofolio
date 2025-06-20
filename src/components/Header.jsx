@@ -11,6 +11,7 @@ function Header() {
         <nav>
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -21,12 +22,12 @@ function Header() {
       {/* Hero Section */}
       <section id="home" className="header-section">
         <div className="intro-text">
-          <h1>Hallo, Saya <span className="biru">Rizky Hanifa A.</span></h1>
+          <h1>Hallo, Saya <span className="biru">Rizky Hanifa Afania</span></h1>
           <p>
-            Saya adalah mahasiswa semester 7 dari jurusan Rekayasa Perangkat Lunak di Telkom University. Saya memiliki minat besar di bidang pengembangan Front End web dan telah mengikuti beberapa pelatihan serta bootcamp yang memperkuat keterampilan saya dalam membangun antarmuka website.
+            Front-End Development Enthusiast
           </p>
           <div className="btns">
-            <a href="#portfolio"><button className="btn-blue">Projects</button></a>
+            <a href="https://github.com/Rizkyhanifaa" target="_blank"><button className="btn-blue">Github</button></a>
             <a href="https://www.linkedin.com/in/rizkyhanifaafania" target="_blank" rel="noopener noreferrer"><button className="btn-outline">LinkedIn</button></a>
           </div>
         </div>

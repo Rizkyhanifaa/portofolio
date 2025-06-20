@@ -1,1 +1,3 @@
 # portofolio
+
+pnpm run dev

@@ -42,7 +42,7 @@ function Projects() {
           </a>
         </div>
         <div className="project-img">
-          {/* <img src="/src/assets/notes.png" alt="Notes App" /> */}
+          <img src="/src/assets/notes.png" alt="Notes App" />
         </div>
       </div>
     </section>

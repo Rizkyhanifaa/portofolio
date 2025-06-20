@@ -1,0 +1,80 @@
+/* Contact.css */
+.contact-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: black;
+  background-color: white; /* Sesuaikan jika ada warna latar belakang lain */
+}
+
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #0BB3DD; /* Warna highlight untuk teks "Saya" */
+}
+
+.contact-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 3rem; /* Jarak antara deskripsi dan ikon */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.contact-icons {
+  display: flex; /* Menggunakan Flexbox untuk menata ikon */
+  justify-content: center; /* Menengahkan ikon secara horizontal */
+  align-items: center;
+  gap: 1.5rem; /* Jarak antar ikon */
+  margin-top: 2rem; /* Jarak dari deskripsi di atas */
+}
+
+.contact-link-item {
+  display: block; /* Penting untuk memastikan ukuran ikon tidak terdistorsi */
+  transition: transform 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.contact-link-item:hover {
+  transform: translateY(-5px); /* Sedikit naik saat di-hover */
+}
+
+.contact-icon {
+  width: 70px; /* Ukuran ikon (disesuaikan dengan gambar PNG bulat Anda) */
+  height: 70px; /* Ukuran ikon */
+  display: block; /* Menghilangkan spasi bawah yang mungkin muncul pada gambar inline */
+  object-fit: contain; /* Memastikan gambar pas tanpa terpotong */
+  /* Karena gambar sudah PNG bulat, tidak perlu border-radius: 50% */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+  .contact-description {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+  .contact-icons {
+    gap: 1rem;
+  }
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-icons {
+    flex-wrap: wrap; /* Jika terlalu banyak ikon, mereka akan wrap ke baris baru */
+    justify-content: center;
+  }
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
