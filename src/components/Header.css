@@ -15,12 +15,24 @@
   z-index: 999;
 }
 
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar nav {
+  display: flex;
+}
+
 .logo {
-  font-size: 16px;
+  font-size: 28px;
   font-weight: bold;
   color: #0BB3DD;
-  line-height: 1;
-  white-space: nowrap;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
 }
 
 .nav-links {
@@ -43,6 +55,8 @@
 /* Header / Hero Section */
 .header-section {
   display: flex;
+    flex-direction: row; 
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height: 500px;
@@ -51,7 +65,6 @@
   padding-right: 40px;
 }
 
-/* Teks Intro */
 .intro-text {
   flex: 1;
   color: #0B0C0C;
@@ -116,5 +129,56 @@
 
 .btn-outline:hover {
   background-color: #e6f9ff;
-  transform: scale(1.05); /* Memperbesar tombol sebesar 5% */
+  transform: scale(1.05); 
 }
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+    nav.nav-open .nav-links {
+      display: flex;
+    }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .header-section {
+    flex-direction: column;
+    text-align: left;
+    padding: 40px 20px;
+  }
+
+  .intro-text {
+    text-align: left;
+  }
+
+  .intro-text h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text p {
+    font-size: 0.95rem;
+    width: 100%;
+  }
+
+  .btns {
+    justify-content: center;
+  }
+}
+

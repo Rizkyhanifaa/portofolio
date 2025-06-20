@@ -1,20 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import profileImg from '../assets/profilku.jpg';
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // tutup menu saat link diklik
+  };
+
   return (
     <>
-      {/* Navbar tetap di luar section */}
       <div className="navbar">
         <div className="logo">Hanifa</div>
-        <nav>
+        <div className="menu-icon" onClick={handleToggle}>
+          ☰
+        </div>
+        <nav className={isMenuOpen ? "nav-open" : ""}>
           <ul className="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" onClick={handleLinkClick}>Home</a></li>
+            <li><a href="#about" onClick={handleLinkClick}>About</a></li>
+            <li><a href="#projects" onClick={handleLinkClick}>Projects</a></li>
+            <li><a href="#skills" onClick={handleLinkClick}>Skills</a></li>
+            <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -22,7 +34,7 @@ function Header() {
       {/* Hero Section */}
       <section id="home" className="header-section">
         <div className="intro-text">
-          <h1>Hallo, Saya <span className="biru">Rizky Hanifa Afania</span></h1>
+          <h1>Hallo, Saya<br /> <span className="biru">Rizky Hanifa Afania</span></h1>
           <p>
             Front-End Development Enthusiast
           </p>
